@@ -36,10 +36,10 @@
 			<td>[<%=vo.getNo() %>]</td>
 			<td><%=vo.getName() %></td>
 			<td><%=vo.getPostDate() %></td>
-			<td><a href="deleteform.jsp">삭제</a></td>
+			<td rowspan=2><a href="deleteform.jsp?no=<%=vo.getNo() %>">삭제</a></td>
 		</tr>
 		<tr>
-			<td colspan=4><%=vo.getText() %></td>
+			<td colspan=3><%=vo.getText() %></td>
 		</tr>
 		<% 
 			}
