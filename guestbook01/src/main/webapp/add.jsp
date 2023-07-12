@@ -7,7 +7,7 @@
 	String name = request.getParameter("name");
 	String password = request.getParameter("password");
 	String message = request.getParameter("message");
-	message.replaceAll("\n", "<br>");
+	// message.replaceAll("\n", "<br>");
 	GuestBookVo vo = new GuestBookVo();
 	vo.setName(name);
 	vo.setPassword(password);
